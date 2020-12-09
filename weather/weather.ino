@@ -1,7 +1,7 @@
 #define BLYNK_PRINT Serial    // Comment this out to disable prints and save space<br>#include < ESP8266WiFi.h>
-#include  <BlynkSimpleEsp8266.h ></p><p>
+#include  <BlynkSimpleEsp8266.h>
 #include "Seeed_BME280.h"
-#include < Wire.h>
+#include <Wire.h>
 BME280 bme280;
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
