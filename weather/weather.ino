@@ -5,10 +5,10 @@
 BME280 bme280;
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "3df5f636c7dc464a457a32e382c4796xx";// Your WiFi credentials.
+char auth[] = "K7mePXp9WduMFcziE";// Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "SSID";
-char pass[] = "PASS WORD";
+char ssid[] = "Pretty fly for a wifi";
+char pass[] = "";
 void setup()
 {
   Serial.begin(9600);
@@ -17,6 +17,8 @@ void setup()
   if(!bme280.init()){
   Serial.println("Device error!");
   }
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void loop()
